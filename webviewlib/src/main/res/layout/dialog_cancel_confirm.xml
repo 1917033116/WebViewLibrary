@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogRoot"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rec_r5_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:text="公告" />
+
+    <View
+        android:id="@+id/titleDivider"
+        android:visibility="gone"
+        style="@style/HorizontalLine" />
+
+    <TextView
+        android:id="@+id/dialogText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="25dp"
+        android:textSize="16sp" />
+
+    <View style="@style/HorizontalLine" />
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialogLeftBtn"
+            android:layout_width="0dp"
+            android:layout_height="46.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="取消"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/left_right_divider"
+            style="@style/VerticalLine" />
+
+        <TextView
+            android:id="@+id/dialogRightBtn"
+            android:layout_width="0dp"
+            android:layout_height="46.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="确定"
+            android:textColor="#e30d2b"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

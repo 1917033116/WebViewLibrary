@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="t_colorPrimary">#CB0816</color>
+    <color name="comDivider">#eee</color>
+    <color name="windowBg">#fafafa</color>
+    <color name="textPrimary">#333</color>
+</resources>
