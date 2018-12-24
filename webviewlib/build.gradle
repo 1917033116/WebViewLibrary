@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'//上传到jcenter工具
+tasks.withType(Javadoc) {
+    options.encoding = "UTF-8"
+}
 android {
     compileSdkVersion 28
 
@@ -26,12 +29,12 @@ android {
 
 
 publish {
-    userOrg = 'xzx1917033116'    //bintray.com用户名
-    groupId = 'com.webviewlibrary'    //jcenter上的路径
-    artifactId = 'webviewlibrary'    //自己的maven上添加的包名
-    publishVersion = '0.0.1'    //版本号
+    userOrg = 'xzx147258369'    //Organizations(组织名)
+    groupId = 'com.webviewlibrary'    //对应生成的依赖的名字（最好是包名）：compile 'com.webviewlibrary:webviewlibrary:0.0.2'
+    artifactId = 'webviewlibrary'    //对应生成的依赖的名字（可以是module名）：compile 'com.webviewlibrary:webviewlibrary:0.0.2'
+    publishVersion = '1.0.0'    //版本号
     desc = 'WebView依赖包.'    //描述
-    website = 'https://github.com/pdog18'    //网站，不重要；
+    website = 'https://github.com/1917033116/WebViewLibrary'    //可以是对应的代码库地址，比如github
 }
 
 dependencies {
